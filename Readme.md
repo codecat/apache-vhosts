@@ -34,7 +34,7 @@ To use LetsEncrypt with this config, first set up a config like this:
 
 Restart Apache and create `/var/www_example.com`. Then, run `letsencrypt-auto` with `webroot`, like this:
 
-    letsencrypt-auto certonly -a webroot --webroot-path /var/www_example.com/ -d example.com -d www.example.com --server https://acme-v01.api.letsencrypt.org/directory --agree-dev-preview
+    letsencrypt-auto certonly -a webroot --webroot-path /var/www_example.com/ -d example.com -d www.example.com --server https://acme-v01.api.letsencrypt.org/directory
 
 You can now remove the first `VHost` macro use, and do something like this instead:
 
